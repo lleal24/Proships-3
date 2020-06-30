@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>ProShips</title>
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<!-- Google Font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Karla:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<!-- REVOLUTION BANNER CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" />
+		<link rel="stylesheet" href="assets/css/owl.carousel.css" />
+		<link rel="stylesheet" href="assets/css/global.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+		<link href="assets/css/skin.less" rel="stylesheet/less">
+		
+		<style>
+			#cookies3 {
+			position: fixed;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			z-index: 999999;
+			display: block;
+		}
+		#info {
+			margin: auto;
+			position: relative;
+			top: 0px;
+			height: 58px;
+			width: 100%;
+			text-align:center;
+			background-color: #eeeeee;
+		}
+		#info p {
+			line-height:58px;
+			font-size:12px;
+			text-align:center;
+		}
+		#info p a {
+			margin-right:5px;
+			text-decoration: underline;
+		}
+		</style>
+	</head>
+	<body>
+		<!--Script de la política de cookies -->
+		<script>
+			function GetCookie(name) {
+			var arg=name+"=";
+			var alen=arg.length;
+			var clen=document.cookie.length;
+			var i=0;
+		
+			while (i<clen) {
+				var j=i+alen;
+		
+				if (document.cookie.substring(i,j)==arg)
+					return "1";
+				i=document.cookie.indexOf(" ",i)+1;
+				if (i==0)
+					break;
+			}
+		
+			return null;
+		}
+		
+		function aceptar_cookies(){
+			var expire=new Date();
+			expire=new Date(expire.getTime()+7776000000);
+			document.cookie="cookies_surestao=aceptada; expires="+expire;
+		
+			var visit=GetCookie("cookies_surestao");
+		
+			if (visit==1){
+				popbox3();
+			}
+		}
+		
+		$(function() {
+			var visit=GetCookie("cookies_surestao");
+			if (visit==1){ popbox3(); }
+		});
+		
+		function popbox3() {
+			$('#cookies3').toggle();
+		}
+		</script>
+		<!--Script de la política de cookies -->
+		<!--=================================Código HTML de la política de cookie -->
+		<!-- Loader Starts here -->
+		<div class="loader-block">
+			<div class="loader">
+				Loading...
+			</div>
+		</div>
+		<!--=================================Código HTML de la política de cookie -->
+		<div id="cookies3">
+			<div id="info">
+				<p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.
+					<a data-toggle="modal" data-target="#cookies" href="#" title="Login"
+					class="h-top-bar_link h-top-bar_link__sign-in">&nbsp;Política de cookies Aquí</a>
+					<a onclick="aceptar_cookies();" style="cursor:pointer;">X Cerrar</a></p>
+				</div>
+			</div>
+			<!--=================================FIN Código HTML de la política de cookie -->
+			<!-- Loader Ends here -->
+			<!--Wrapper Section Start Here -->
+			<div id="wrapper" class="homepage homepage-1">
+				<!--header Section Start Here -->
+				<header id="header" class="header">
+					
+					<!-- header Start  -->
+					<div class="primary-header">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<div class="mail">
+										<img src="assets/images/icon-mail.png" alt="" />
+										<span>Email: <a class="email-us" href="mailto:comercioexterior@tranexco.net">servicios@proships.com</a></span>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="social-wrap clearfix">
+										<a href="nuevo-servicio.html" class="request">Solicita Servicio</a>
+										<ul class="social">
+											<li>
+												<a href="#" target="new"> <i class="fa fa-facebook"></i> </a>
+											</li>
+											<li>
+												<a href="#" target="new"> <i class="fa fa-twitter"></i> </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- header End-->
+					<!-- header Consultas -->
+					<div class="main-header">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 hidden-xs">
+									<div class="call-us">
+										<ul>
+											<li>
+												<img src="assets/images/iphone.png" alt="icono" />
+												<span class="transport">LLÁMENOS AHORA PARA <span></span> SU CONSULTA</span>
+											</li>
+											<li>
+												<a href="tel:5917890123">+57 320 6916454</a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
+								<div class="col-xs-12 col-sm-3">
+									<a href="index.html" class="logo"> <img src="assets//images/logo.proships.png" alt="" /> </a>
+								</div>
+								<div class="col-xs-12 col-sm-9 custom-nav">
+									<nav>
+										<div id='cssmenu'>
+											<ul class="navigation">
+												<li class='active'>
+													<a href='index.html'>Inicio</a>
+													
+												</li>
+												
+												<li>
+													<a href="servicios.html">Servicios</a>
+												</li>
+												<li>
+													<a href="tipos.html">Tipos de Envío</a>
+												</li>
+												<li>
+													<a href="cotiza.html">Cotiza</a>
+												</li>
+												
+												<li>
+													<a href="contacto.html">Contáctanos</a>
+												</li>
+												<!-- 	<li>
+														<a href="faq.html">FAQ</a>
+												</li> -->
+												<li>
+													<a type="button" class="btn tracking" data-toggle="modal" data-target="#exampleModalCenter">
+														TRACKING <i class="fa fa-search text-white"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="nav-icon">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</nav>
+									<!-- Modal tracking -->
+									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 style="font-weight: 800;" class="modal-title" id="exampleModalCenterTitle">Revisa el estado de tu envío</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													
+													<section id="buscar">
+														<input id="search-input" class="form-control input-lg" placeholder="Ej:90612686590">
+														<a id="buscar-num" href="#" <i class="fa fa-search" aria-hidden="true"></i>  Buscar</a>
+													</section>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  header Ends  c-->
+					</header>
+					<!--header Section Ends Here -->
+					
+					<!--banner Section starts Here -->
+					<div class="bannercontainer spacetop">
+						<div class="banner">
+							<ul>
+								<!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
+								<li data-transition="random" data-slotamount="1">
+									<img src="assets/images/banner/banner-plane.jpg" alt="logística" />
+									<div class="banner-text">
+										<div class="caption sft big_white" data-x="0" data-y="100" data-speed="center" data-start="1700" data-easing="Power4.easeInOut">
+											<a href="#" class="shipping">Nuestros Servicios</a>
+										</div>
+										<div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
+											<h2>100%
+											TECNOLOGÍA
+											RECOGEMOS Y LLEVAMOS</h2>
+										</div>
+									</div>
+								</li>
+								<li data-transition="random" data-slotamount="1">
+									<img src="assets/images/banner/banner-train.jpg" alt="" />
+									<div class="banner-text">
+										<div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
+											<a href="#" class="shipping">Solicita servicios</a>
+										</div>
+										<div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
+											<h2>TRANSPORTE
+											CONFIABLE
+											PARA MEJORAR TUS ENTREGAS</h2>
+										</div>
+										
+									</div>
+								</li>
+								<li data-transition="random" data-slotamount="1">
+									<img src="assets/images/banner/banner-truck.jpg" alt="" />
+									<div class="banner-text">
+										<div class="caption sft big_white" data-x="0" data-y="100" data-speed="700" data-start="1700" data-easing="Power4.easeInOut">
+											<a href="tipos.html" class="shipping">Solicita Servicio</a>
+										</div>
+										<div class="caption sfb big_orange clearfix"  data-x="100" data-y="350" data-speed="500" data-start="1900" data-easing="Power4.easeInOut">
+											<h2>SOLUCIONES
+											EN LOGÍSTICA
+											Y TECNOLOGÍA</h2>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--banner Section ends Here -->
+					<!--Section area starts Here -->
+					<section id="section">
+						<!--Section box starts Here -->
+						<div class="section">
+							<div class="services">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="heading">
+												<span>SERVICIOS PROSHIPS</span>
+												<h2>Nuestros Servicios</h2>
+											</div>
+										</div>
+									</div>
+									<div id="services-slides" class="services-slider">
+										<div class="slides-tab zoom">
+											<figure>
+												<img src="assets/images/servicios/carga.jpg" alt="carga" />
+											</figure>
+											<div class="slides-text">
+												<h4><a href="tipos.html">CARGA</a></h4>
+												<p>
+													Movilizamos tus mercancías desde puertos o ciudades usando vehículos de carga .
+												</p>
+												<a href="#" class="read-more">Ver más <span>></span></a>
+											</div>
+										</div>
+										<div class="slides-tab zoom">
+											<figure>
+												<img src="assets/images/servicios/distribucion.jpg" alt="distribucion "/>
+											</figure>
+											<div class="slides-text">
+												<h4><a href="tipos.html">DISTRIBUCIÓN</a></h4>
+												<p>
+													Transportamos tus productos desde centros de distribución hacia canales de venta.
+												</p>
+												<a href="servicios.html" class="read-more">Ver más <span>></span></a>
+											</div>
+										</div>
+										<div class="slides-tab zoom">
+											<figure>
+												<img src="assets/images/servicios/express.jpg" alt="express" />
+											</figure>
+											<div class="slides-text">
+												<h4><a href="tipos.html#">EXPRESS</a></h4>
+												<p>
+													Entregamos tus servicios, ventas e-commerce, documentos, paquetes compras internacionles.
+												</p>
+												<a href="servicios.html" class="read-more">Ver más <span>></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="features">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-4">
+											<div class="features-text">
+												<div class="heading">
+													<span>SERVICIO GRANTIZADO</span>
+													<h3>100% TECNOLOGÍA</h3>
+												</div>
+												<p>
+													Lograrás dividir y organizar racionalmente una ciudad, área o territorio, creando zonas homogéneas de acuerdo a todas tus necesidades logísticas Aprovecharás la capacidad máxima del vehículo, con un sistema diseñado que optimiza tus espacios y disminuye tus costos de transport
+												</p>
+												<a href="servicios.html" class="services-link button">Nuestros Servicios</a>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-8 custom-padding">
+											<div class="row">
+												<div class="col-xs-12 col-sm-6">
+													<div class="features-tab">
+														<img src="assets/images/icon-plane.png" alt="software">
+														<div class="tab-text">
+															<h5>Software</h5>
+															<p>
+																Controle sus envíos históricamente a través de nuestro software .
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<div class="features-tab">
+														<img src="assets/images/icon-shipped.png" alt="cubrimiento">
+														<div class="tab-text">
+															<h5>Tracking</h5>
+															<p>
+																Realice el seguimiento de sus envíos con la más alta precisión en tiempos, estados y ubicación.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<div class="features-tab">
+														<img src="assets/images/icon-plane.png" alt="Tracking">
+														<div class="tab-text">
+															<h5>Cubrimiento</h5>
+															<p>
+																Expanda su negocio llegando a mercados internacionales o negociando con proveedores de cualquier parte del mundo.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<div class="features-tab">
+														<img src="assets/images/icon-solution.png" alt="Tracking">
+														<div class="tab-text">
+															<h5>Soluciones transversales</h5>
+															<p>
+																Apóyese en nosotros si busca soluciones transversales que puedan mejorar la eficiencia.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about">
+								<div class="figure parallax">
+									
+								</div>
+								<div class="transport-king">
+									<div class="about-us">
+										<div class="description">
+											<div class="heading">
+												<span>Algo de Nosotros</span>
+												<h3>SOBRE EL TRANSPORTE</h3>
+											</div>
+											<p style="color: white;">
+												Ofrecemos soluciones en toda la cadena logística convirtiéndonos en el aliado ideal para cualquier empresa que requiera soluciones de comercio internacional. Con nuestro completo portafolio de servicios buscamos facilitar los procesos de importación y exportación de mercancía abaratando costos.
+											</p>
+										</div>
+									</div>
+									<div class="testimonial-section">
+										<blockquote class="custom-blockquote">
+											<div class="spanish">
+												<p>
+													ProShips es una empresa Colombiana
+													para la prestación de servicios integrales en logística.
+												</p>
+											</div>
+											<footer class="mission">
+												<h5>NUESTRA MISION</h5>
+												<span>Mejorar cada uno de los indicadores de eficiencia y calidad para nuestros clientes.</span>
+											</footer>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+							
+							<div class="query">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-sm-10">
+											<h5>
+											¿TODAVÍA TIENES DUDAS SOBRE NUESTROS SERVICIOS?</h5>
+											<p>
+												ProShips es una empresa Colombiana para la prestación de servicios integrales en logística.
+											</p>
+										</div>
+										<div class="col-xs-12 col-sm-2">
+											<a href="servicios.html" class="contact-us button">Solicita servicio </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Section box ends Here -->
+					</section>
+					<!--Section area ends Here -->
+					<!--Footer area starts Here -->
+					<footer id="footer">
+						<!--Footer box starts Here -->
+						<div class="footer clearfix">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-4">
+										<div class="quick-links">
+											<h5>LINKS DE INTERES</h5>
+										</div>
+										<div class="quick-list">
+											<ul>
+												<li>
+													<a href="https://procolombia.co" target="new">ProColombia</a>
+												</li>
+												<li>
+													<a href="http://www.runt.com.co" target="new">RUNT</a>
+												</li>
+												<li>
+													<a href="https://www.dian.gov.co" target="new">DIAN</a>
+												</li>
+												<li>
+													<a href="https://www.searates.com/reference/incoterms" target="new">INCOTERMS</a>
+												</li>
+											</ul>
+										</div>
+										<div class="quick-list">
+											<ul>
+												<li>
+													<a href="http://www.mincit.gov.co" target="new">MinComercio</a>
+												</li>
+												<li>
+													<a href="https://www.mintransporte.gov.co" target="new">MinTransporte</a>
+												</li>
+												<li>
+													<a href="https://www.iata.org" target="new">IATA</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<div class="our-address">
+											<h5>CONTÁCTENOS</h5>
+											<div class="address">
+												<h6>Dirección:</h6>
+												<address>
+													Av Calle 26 # 99j - 66 Oficina 303
+													Bogotá, Colombiana
+												</address>
+												<div class="phone">
+													<span>Teléfono : <a href="tel:5917890123">+57 320 6916454</a></span>
+													<span>email : <a href="mail">comercioexterior@tranexco.net</a></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<div class="sign-up">
+											<h5>newsletter:</h5>
+											<p style="color: white;">
+												Si desea recibir todas nuestras actualizaciones semanales sobre nuevas ofertas y descuentos, regístrese a continuación
+											</p>
+											<form>
+												<input id="mail" type="text" placeholder="Email " name="email"/>
+												<!-- <input id="submit" type="submit" value="" class="fa fa-paper-plane-o" /> -->
+												<button class="fa fa-paper-plane"></button>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="row custom-row">
+									<div class="col-xs-12 col-sm-5">
+										<div class="copyright">
+											<span>Copyright 2020. All Rights Reserved by <a href="#">ProShips</a></span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-7 no-wrap-mobile">
+										<div class="footer-nav">
+											<ul>
+												<li>
+													<a href="#"> Derechos usuarios</a>
+												</li>
+												<li>
+													<a href="#"> Contrato ProShips</a>
+												</li>
+												<li>
+													<a href="#"> Condiciones  Servicio</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Footer box ends Here -->
+					</footer>
+					<!--Footer area ends Here -->
+				</div>
+				<!--Wrapper Section Ends Here -->
+				<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+				<script type="text/javascript" src="assets/js/less.js"></script>
+				<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+				<script type="text/javascript" src="assets/js/jquery.selectbox-0.2.min.js"></script>
+				<!--Parrallax -->
+				<script type="text/javascript" src="assets/js/parallax.js"></script>
+				<!-- jQuery REVOLUTION Slider  -->
+				<script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+				<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+				<script type="text/javascript " src="assets/js/bootstrap.js"></script>
+				<script type="text/javascript" src="assets/js/revolution.js"></script>
+				<script src="assets/js/less.js"></script>
+				<script src="assets/js/script.js" type="text/javascript"></script>
+				<script type="text/javascript" src="assets/js/site.js"></script>
+				<!-- MODAL COKIES -->
+				<div class="modal fade" id="cookies" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="cookies">Politicas de Cookies</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p align="justify">Esta página web le informa, en esta sección, sobre la política de recogida y tratamiento de cookies.
+									¿Qué son las cookies?
+									Una cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.
+									¿Qué tipos de cookies utiliza esta página web?
+									Esta página web utiliza los siguientes tipos de cookies:
+									<strong>Cookies de análisis:</strong> Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos.
+									<strong>Cookies de personalización:</strong> Son aquellas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian el idioma o el tipo de navegador a través del cual se conecta al servicio.
+									<strong>Cookies publicitarias:</strong> Son aquéllas que, bien tratadas por esta web o por terceros, permiten gestionar de la forma más eficaz posible la oferta de los espacios publicitarios que hay en la página web, adecuando el contenido del anuncio al contenido del servicio solicitado o al uso que realice de nuestra página web. Para ello podemos analizar sus hábitos de navegación en Internet y podemos mostrarle publicidad relacionada con su perfil de navegación.
+									<strong>Cookies de publicidad comportamental:</strong> Son aquellas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado. Este tipo de cookies almacenan información del comportamiento de los visitantes obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar avisos publicitarios en función del mismo.
+									
+									<strong>Desactivar las Cookies.</strong>
+									Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador.
+									En la mayoría de los navegadores web se ofrece la posibilidad de permitir, bloquear o eliminar las cookies instaladas en su equipo.
+									A continuación puede acceder a la configuración de los navegadores webs más frecuentes para aceptar, instalar o desactivar las cookies:
+									<strong>Configurar cookies en Google Chrome
+									Configurar cookies en Microsoft Internet Explorer
+									Configurar cookies en Mozilla Firefox
+									Configurar cookies en Safari (Apple)
+									Cookies de terceros.</strong>
+									Esta página web utiliza servicios de terceros para recopilar información con fines estadísticos y de uso de la web. Se usan cookies de DoubleClick para mejorar la publicidad que se incluye en el sitio web. Son utilizadas para orientar la publicidad según el contenido que es relevante para un usuario, mejorando así la calidad de experiencia en el uso del mismo.
+									En concreto, usamos los servicios de Google Adsense y de Google Analytics para nuestras estadísticas y publicidad. Algunas cookies son esenciales para el funcionamiento del sitio, por ejemplo el buscador incorporado.
+									Nuestro sitio incluye otras funcionalidades proporcionadas por terceros. Usted puede fácilmente compartir el contenido en redes sociales como Facebook, Twitter o Google +, con los botones que hemos incluido a tal efecto.
+									Advertencia sobre eliminar cookies.
+									Usted puede eliminar y bloquear todas las cookies de este sitio, pero parte del sitio no funcionará o la calidad de la página web puede verse afectada.
+									Si tiene cualquier duda acerca de nuestra política de cookies, puede contactar con esta página web a través de nuestros canales de Contacto.
+									
+								</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--FIN MODAL COKIES -->
+			</body>
+		</html>
