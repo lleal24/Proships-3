@@ -1,26 +1,36 @@
-document.getElementById("buscar-num").addEventListener("click", getTrackingSifamilla);
+document.getElementById("buscar-num").addEventListener("click", tracking);
+const loader = document.getElementById("loader");
+const divResult = document.getElementById("resultTracking");
+const fail = document.getElementById("error");
 
-async function getTrackingSifamilla() {
+function tracking(){
+    var numberTracking = document.getElementById("search-input").value;
+    divResult.classList.add("hidden");
+    fail.classList.add("hidden");
+    getTrackingSifamilla(numberTracking);
+}
+
+async function getTrackingSifamilla(numberTracking) {
     try {
         var numberTracking = document.getElementById("search-input").value;
         const urlAuropaq = `http://sifamilla.fivepaq.com/api/Detalles/GetDetalleByGuia?guia=${numberTracking}&entorno=AUROPAQ`;
+        loader.classList.remove("hidden");
         let res = await fetch(urlAuropaq);
         let json = await res.json();
+        loader.classList.add("hidden");
         showData(json);
 
 
         //console.log('json', json)
     } catch (err) {
-        let fail = document.getElementById("error");
+        loader.classList.add("hidden");
         fail.classList.remove("hidden")
         //console.error('err', err);
 
     }
 }
 
-
 function showData(dataAuro) {
-    let divResult = document.getElementById("resultTracking");
     divResult.classList.remove("hidden");
     let bodyTable = document.getElementById('bodyTable');
     bodyTable.innerHTML = "";
