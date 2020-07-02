@@ -4929,3 +4929,12 @@ shop-section h4,
 	margin-top: 10px;
 	display: inline-block;
 }
+
+#title-table{
+	padding: 2% 0 2% 0;
+	text-align: center;
+}
+
+#tracking-table{
+	color: black;
+}

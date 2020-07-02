@@ -1,7 +1,14 @@
 document.getElementById("buscar-num").addEventListener("click", tracking);
+document.getElementById("nav-button").addEventListener("click", reset);
 const loader = document.getElementById("loader");
 const divResult = document.getElementById("resultTracking");
 const fail = document.getElementById("error");
+
+function reset(){
+    document.getElementById("search-input").value = "";
+    divResult.classList.add("hidden");
+    fail.classList.add("hidden");
+}
 
 function tracking(){
     var numberTracking = document.getElementById("search-input").value;
@@ -13,20 +20,17 @@ function tracking(){
 async function getTrackingSifamilla(numberTracking) {
     try {
         var numberTracking = document.getElementById("search-input").value;
-        const urlAuropaq = `http://sifamilla.fivepaq.com/api/Detalles/GetDetalleByGuia?guia=${numberTracking}&entorno=AUROPAQ`;
+        const urlAuropaq = `http://sifamilla.fivepaq.com/api/Detalles/GetDetalleByGuia?guia=${numberTracking}&entorno=ALL`;
         loader.classList.remove("hidden");
         let res = await fetch(urlAuropaq);
         let json = await res.json();
         loader.classList.add("hidden");
         showData(json);
-
-
         //console.log('json', json)
     } catch (err) {
         loader.classList.add("hidden");
         fail.classList.remove("hidden")
         //console.error('err', err);
-
     }
 }
 
@@ -36,9 +40,7 @@ function showData(dataAuro) {
     bodyTable.innerHTML = "";
     for (let item of dataAuro) {
         let date = item.DateDelivery;
-        //llamar funcion de calculo de hora
         let horaUTCBogota = horarioUTC_5(date);
-        //console.log("Esta es la fecha nueva :" + horaUTCBogota);
         bodyTable.innerHTML += `
                                     
                                            <tr>
